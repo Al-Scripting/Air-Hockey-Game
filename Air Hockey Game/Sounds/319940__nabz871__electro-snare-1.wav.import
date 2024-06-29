@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/319940__nabz871__electro-snare-1.wav-3157f95507529a18944f3afc7ca9f6eb.sample"
+
+[deps]
+
+source_file="res://Sounds/319940__nabz871__electro-snare-1.wav"
+dest_files=[ "res://.import/319940__nabz871__electro-snare-1.wav-3157f95507529a18944f3afc7ca9f6eb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
