@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfytqh0n806ev"]
+
+[ext_resource type="Texture2D" uid="uid://u2iapuxaq5r5" path="res://Sprites/Rounded Box Outline.png" id="1_t2x3f"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gm4br"]
+size = Vector2(121, 122)
+
+[node name="Wall" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_gm4br")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_t2x3f")

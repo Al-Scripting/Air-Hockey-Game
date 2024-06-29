@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://btet5bslcgw1u"]
+
+[ext_resource type="Script" path="res://Objects/Paddle.gd" id="1_32f4v"]
+[ext_resource type="Texture2D" uid="uid://b5et07q4sj78b" path="res://Sprites/Player_Puck.png" id="2_edwfa"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ulbis"]
+radius = 130.246
+
+[node name="Paddle" type="CharacterBody2D"]
+script = ExtResource("1_32f4v")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("2_edwfa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ulbis")

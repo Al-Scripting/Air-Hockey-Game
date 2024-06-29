@@ -1,0 +1,151 @@
+[gd_scene load_steps=6 format=3 uid="uid://dtc5bh7l63oty"]
+
+[ext_resource type="PackedScene" uid="uid://bcruq41kn5kxg" path="res://Objects/Paddle.tscn" id="1_2jk1k"]
+[ext_resource type="PackedScene" uid="uid://bfytqh0n806ev" path="res://Objects/Wall.tscn" id="2_14eiv"]
+[ext_resource type="Texture2D" uid="uid://bhdty4wjqs4sr" path="res://Sprites/Rounded Box.png" id="3_jsj8t"]
+[ext_resource type="PackedScene" uid="uid://rtiej3wky01" path="res://Objects/Puck.tscn" id="4_symmq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_np6dx"]
+size = Vector2(23.5152, 509)
+
+[node name="MainScene" type="Node2D"]
+scale = Vector2(1.02062, 1)
+
+[node name="Paddle" parent="." instance=ExtResource("1_2jk1k")]
+modulate = Color(0.656739, 0.0642042, 0.131605, 1)
+light_mask = 5
+visibility_layer = 5
+position = Vector2(188.121, 272)
+
+[node name="Paddle2" parent="." instance=ExtResource("1_2jk1k")]
+modulate = Color(0.542932, 0.953386, 1, 1)
+light_mask = 5
+visibility_layer = 5
+position = Vector2(964.121, 312)
+collision_layer = 5
+collision_mask = 5
+
+[node name="Node2D" type="Node2D" parent="."]
+z_index = 3
+
+[node name="Wall" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(23.5152, 8)
+
+[node name="Wall2" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(141.091, 8)
+
+[node name="Wall3" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(258.667, 8)
+
+[node name="Wall4" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(384.081, 8)
+
+[node name="Wall5" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(501.657, 8)
+
+[node name="Wall6" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(627.071, 8)
+
+[node name="Wall7" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(752.485, 8)
+
+[node name="Wall8" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(877.899, 8)
+
+[node name="Wall9" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(1003.31, 8)
+
+[node name="Wall10" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(1128.73, 8)
+
+[node name="Wall11" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(7.83838, 128)
+
+[node name="Wall12" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(7.83838, 512)
+
+[node name="Wall13" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(7.83838, 632)
+
+[node name="Wall14" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(258.667, 632)
+
+[node name="Wall15" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(133.253, 632)
+
+[node name="Wall16" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(384.081, 632)
+
+[node name="Wall17" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(509.495, 632)
+
+[node name="Wall18" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(634.909, 632)
+
+[node name="Wall19" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(760.323, 632)
+
+[node name="Wall20" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(885.737, 632)
+
+[node name="Wall21" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(1003.31, 632)
+
+[node name="Wall22" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(1113.05, 632)
+
+[node name="Wall23" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(1128.73, 512)
+
+[node name="Wall24" parent="Node2D" instance=ExtResource("2_14eiv")]
+position = Vector2(1128.73, 128)
+
+[node name="Barrier" type="StaticBody2D" parent="."]
+modulate = Color(0.19044, 0.696898, 1, 0.490196)
+light_mask = 4
+visibility_layer = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Barrier"]
+modulate = Color(1, 1, 1, 0.490196)
+position = Vector2(583.483, 318.656)
+scale = Vector2(-0.0976925, 2.16519)
+texture = ExtResource("3_jsj8t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barrier"]
+position = Vector2(583.96, 321.5)
+shape = SubResource("RectangleShape2D_np6dx")
+
+[node name="Barrier_P1" type="StaticBody2D" parent="."]
+modulate = Color(0.19044, 0.696898, 1, 0.490196)
+light_mask = 4
+visibility_layer = 4
+position = Vector2(-533.01, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="Barrier_P1"]
+modulate = Color(1, 1, 1, 0.490196)
+position = Vector2(583.483, 318.656)
+scale = Vector2(-0.0976925, 2.16519)
+texture = ExtResource("3_jsj8t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barrier_P1"]
+position = Vector2(583.96, 321.5)
+shape = SubResource("RectangleShape2D_np6dx")
+
+[node name="Barrier_P2" type="StaticBody2D" parent="."]
+modulate = Color(0.19044, 0.696898, 1, 0.490196)
+light_mask = 4
+visibility_layer = 4
+position = Vector2(497.737, 16)
+
+[node name="Sprite2D" type="Sprite2D" parent="Barrier_P2"]
+modulate = Color(1, 1, 1, 0.490196)
+position = Vector2(583.483, 318.656)
+scale = Vector2(-0.0976925, 2.16519)
+texture = ExtResource("3_jsj8t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barrier_P2"]
+position = Vector2(583.96, 321.5)
+shape = SubResource("RectangleShape2D_np6dx")
+
+[node name="Puck" parent="." instance=ExtResource("4_symmq")]
+position = Vector2(446.788, 256)
