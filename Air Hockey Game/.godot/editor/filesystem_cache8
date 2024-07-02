@@ -1,0 +1,31 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1719885533
+default_env.tres::Environment::8589780848033835344::1719885402::0::1::::<><>::
+Game_Manager.gd::GDScript::-1::1719883044::0::1::::<>Node2D<>::
+icon.png::CompressedTexture2D::2256357594423439842::1719883044::1719883073::1::::<><>::
+icon.svg::CompressedTexture2D::2510101532847152321::1719883044::1719883073::1::::<><>::
+Main_Scene.tscn::PackedScene::2473332498629802784::1719885402::0::1::::<><>::uid://bcruq41kn5kxg::::res://Objects/Paddle.tscn<>res://Objects/Basic_Wall.tscn<>uid://rtiej3wky01::::res://Objects/Puck.tscn<>res://Game_Manager.gd<>uid://bbe0jrbdaiqin::::res://Sprites/Puck.png<>res://PuckChar.gd<>uid://c6m6iup4e1445::::res://Sounds/342410__teacoma__straight-techno-beat.wav<>uid://b2cqxwvlmjw5::::res://Objects/Neon_Wall.tscn<>uid://qx2gip6a7jpg::::res://Sprites/Blank.png
+PuckChar.gd::GDScript::-1::1719884859::0::1::::<>CharacterBody2D<>::
+::res://Objects/::1719885374
+Basic_Wall.tscn::PackedScene::-1::1719883044::0::1::::<><>::res://Sprites/Blank.png
+Main Scene.tscn::PackedScene::8498802548926462598::1719883044::0::1::::<><>::uid://bcruq41kn5kxg
+Neon_Wall.tscn::PackedScene::126078292677734494::1719885110::0::1::::<><>::uid://bhdty4wjqs4sr::::res://Sprites/Rounded Box.png
+Paddle.gd::GDScript::-1::1719883045::0::1::::<>CharacterBody2D<>::
+Paddle.tscn::PackedScene::2563137269160976700::1719883045::0::1::::<><>::uid://cy4sgwlbowikg
+Puck.gd::GDScript::-1::1719883045::0::1::::<>RigidBody2D<>::
+Puck.tscn::PackedScene::36262556331471420::1719883045::0::1::::<><>::uid://bbe0jrbdaiqin
+Wall.tscn::PackedScene::2788092570465078353::1719883045::0::1::::<><>::uid://u2iapuxaq5r5
+::res://Sounds/::1719885374
+277046__nabz871__electro-flanged-snare (1).wav::AudioStreamWAV::3119728121801668769::1719883045::1719883073::1::::<><>::
+315724__nabz871__tonal-impact-f.wav::AudioStreamWAV::4760784480333728561::1719883045::1719883073::1::::<><>::
+315725__nabz871__tonal-impact-e.wav::AudioStreamWAV::5734058219369462277::1719883045::1719883073::1::::<><>::
+315726__nabz871__tonal-impact-d.wav::AudioStreamWAV::3728583716707124787::1719883045::1719883073::1::::<><>::
+319940__nabz871__electro-snare-1.wav::AudioStreamWAV::5821140313990476016::1719883045::1719883073::1::::<><>::
+342410__teacoma__straight-techno-beat.wav::AudioStreamWAV::6975365641304021084::1719883045::1719883073::1::::<><>::
+::res://Sprites/::1719885374
+Blank.png::CompressedTexture2D::1172152704888651080::1719883045::1719883073::1::::<><>::
+Player_Puck.png::CompressedTexture2D::6518345362771508714::1719883045::1719883073::1::::<><>::
+Puck light.png::CompressedTexture2D::6757241260948429625::1719883045::1719883073::1::::<><>::
+Puck.png::CompressedTexture2D::2466401929890074557::1719883045::1719883073::1::::<><>::
+Rounded Box Outline.png::CompressedTexture2D::1460001627854412728::1719883045::1719883073::1::::<><>::
+Rounded Box.png::CompressedTexture2D::2885133761931680537::1719883045::1719883073::1::::<><>::
