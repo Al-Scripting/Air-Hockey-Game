@@ -1,4 +1,3 @@
 res://default_env.tres
 res://Main_Scene.tscn
 res://Objects/Neon_Wall.tscn
-res://PuckChar.gd

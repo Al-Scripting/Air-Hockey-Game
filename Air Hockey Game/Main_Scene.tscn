@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://rtiej3wky01" path="res://Objects/Puck.tscn" id="3"]
 [ext_resource type="Script" path="res://Game_Manager.gd" id="4"]
 [ext_resource type="Texture2D" uid="uid://bbe0jrbdaiqin" path="res://Sprites/Puck.png" id="4_a5e8g"]
-[ext_resource type="Script" path="res://PuckChar.gd" id="4_je2jv"]
+[ext_resource type="Script" path="res://Objects/PuckChar.gd" id="4_je2jv"]
 [ext_resource type="AudioStream" uid="uid://c6m6iup4e1445" path="res://Sounds/342410__teacoma__straight-techno-beat.wav" id="5"]
 [ext_resource type="PackedScene" uid="uid://b2cqxwvlmjw5" path="res://Objects/Neon_Wall.tscn" id="6"]
 [ext_resource type="Texture2D" uid="uid://qx2gip6a7jpg" path="res://Sprites/Blank.png" id="7"]
