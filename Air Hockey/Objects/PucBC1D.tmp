@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dcylwutv5ogc1"]
+
+[ext_resource type="Script" path="res://Objects/Puck.gd" id="1_ai8nu"]
+[ext_resource type="Texture2D" uid="uid://cldur8ommj5cl" path="res://Sprites/Puck.png" id="1_nq8k7"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ld425"]
+radius = 31.0161
+
+[node name="Puck" type="CharacterBody2D"]
+scale = Vector2(1.5, 1.5)
+script = ExtResource("1_ai8nu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_nq8k7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ld425")

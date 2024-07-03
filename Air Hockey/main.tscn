@@ -1,0 +1,205 @@
+[gd_scene load_steps=8 format=3 uid="uid://8b7d565a0ccc"]
+
+[ext_resource type="PackedScene" uid="uid://dkqjq6f8ej5it" path="res://Objects/paddle.tscn" id="1_dsdml"]
+[ext_resource type="Script" path="res://Scripts/Game_Manger.gd" id="1_vvov6"]
+[ext_resource type="PackedScene" uid="uid://cgchqfv7aypsk" path="res://Objects/Wall.tscn" id="2_xa3ob"]
+[ext_resource type="Texture2D" uid="uid://wanyj8vm0yqe" path="res://Sprites/Rounded Box.png" id="3_axt0x"]
+[ext_resource type="PackedScene" uid="uid://dcylwutv5ogc1" path="res://Objects/Puck.tscn" id="4_vkwvs"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mp7eh"]
+radius = 24.0
+height = 784.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nrsog"]
+size = Vector2(130, 538)
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_vvov6")
+
+[node name="UI" type="Node2D" parent="."]
+position = Vector2(80, 72)
+scale = Vector2(2.68583, 2.83611)
+
+[node name="Label" type="Label" parent="UI"]
+z_index = 5
+offset_right = 40.0
+offset_bottom = 23.0
+metadata/_edit_use_anchors_ = true
+
+[node name="Paddle" parent="." instance=ExtResource("1_dsdml")]
+modulate = Color(0.956863, 0.00392157, 0, 1)
+position = Vector2(211, 331)
+collision_layer = 5
+collision_mask = 5
+
+[node name="Paddle2" parent="." instance=ExtResource("1_dsdml")]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(876, 325)
+collision_layer = 5
+collision_mask = 5
+Control_Style = 2
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Wall" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(56, 0)
+
+[node name="Wall2" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(168, 0)
+
+[node name="Wall3" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(280, 0)
+
+[node name="Wall4" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(392, 0)
+
+[node name="Wall5" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(504, 0)
+
+[node name="Wall6" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(616, 0)
+
+[node name="Wall7" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(732, 0)
+
+[node name="Wall8" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(848, 0)
+
+[node name="Wall9" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(964, 1)
+
+[node name="Wall10" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(1080, 0)
+
+[node name="Wall11" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(1192, 0)
+
+[node name="Wall12" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(1176, 112)
+
+[node name="Wall16" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(1176, 576)
+
+[node name="Wall17" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(1192, 680)
+
+[node name="Wall18" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(1080, 680)
+
+[node name="Wall19" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(966, 680)
+
+[node name="Wall20" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(849, 680)
+
+[node name="Wall21" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(734, 680)
+
+[node name="Wall22" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(619, 680)
+
+[node name="Wall23" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(504, 680)
+
+[node name="Wall24" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(392, 680)
+
+[node name="Wall25" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(392, 680)
+
+[node name="Wall26" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(280, 680)
+
+[node name="Wall27" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(280, 680)
+
+[node name="Wall28" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(168, 680)
+rotation = 1.5708
+
+[node name="Wall29" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(56, 680)
+rotation = 1.5708
+
+[node name="Wall30" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(-32, 680)
+rotation = 1.5708
+
+[node name="Wall31" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(-16, 568)
+rotation = 1.5708
+
+[node name="Wall32" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(-48, 0)
+rotation = 1.5708
+
+[node name="Wall33" parent="Node2D" instance=ExtResource("2_xa3ob")]
+position = Vector2(-24, 104)
+rotation = 1.5708
+
+[node name="Barrier" type="StaticBody2D" parent="."]
+modulate = Color(1, 1, 1, 0.490196)
+position = Vector2(-24, 0)
+collision_layer = 4
+collision_mask = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Barrier"]
+position = Vector2(616, 336)
+scale = Vector2(0.171875, 2.51563)
+texture = ExtResource("3_axt0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Barrier"]
+position = Vector2(616, 344)
+scale = Vector2(1, 0.76)
+shape = SubResource("CapsuleShape2D_mp7eh")
+debug_color = Color(0.830183, 0.392096, 0.0698644, 0.42)
+
+[node name="Player1-Barrier" type="StaticBody2D" parent="."]
+modulate = Color(1, 0.0784314, 0, 0.490196)
+position = Vector2(-608, -16)
+collision_layer = 4
+collision_mask = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Player1-Barrier"]
+position = Vector2(616, 336)
+scale = Vector2(0.171875, 2.51563)
+texture = ExtResource("3_axt0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player1-Barrier"]
+position = Vector2(616, 344)
+shape = SubResource("CapsuleShape2D_mp7eh")
+
+[node name="Player2-Barrier" type="StaticBody2D" parent="."]
+modulate = Color(0, 0, 1, 0.490196)
+position = Vector2(536, 16)
+collision_layer = 4
+collision_mask = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="Player2-Barrier"]
+position = Vector2(616, 336)
+scale = Vector2(0.171875, 2.51563)
+texture = ExtResource("3_axt0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player2-Barrier"]
+position = Vector2(616, 344)
+shape = SubResource("CapsuleShape2D_mp7eh")
+debug_color = Color(0.313281, 0.403998, 1, 0.490196)
+
+[node name="Puck" parent="." instance=ExtResource("4_vkwvs")]
+position = Vector2(440, 320)
+
+[node name="Goal_Player1" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Goal_Player1"]
+position = Vector2(-80, 320)
+shape = SubResource("RectangleShape2D_nrsog")
+
+[node name="Goal_Player2" type="Area2D" parent="."]
+position = Vector2(1320, 24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Goal_Player2"]
+position = Vector2(-80, 320)
+shape = SubResource("RectangleShape2D_nrsog")
+
+[connection signal="body_entered" from="Goal_Player1" to="Puck" method="_on_goal_player_1_body_entered"]
+[connection signal="body_entered" from="Goal_Player2" to="Puck" method="_on_goal_player_2_body_entered"]
